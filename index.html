@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>LSMG</title>
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>  
+  <body>
+  <div class="header">
+    <h1 class="logo">Light and Sound Memory Game v1.00</h1>
+  </div>
+    
+    
+    <p>
+      Welcome to the LSMG game!<br>
+      get ready to Start.
+    </p>
+    <br> <!-- Add a new line-->
+    <!--  button to start the game-->
+    <button id="startBtn" onclick="startGame()">
+      <span>Start</span>
+    </button>
+    <button class="hidden" id="stopBtn" onclick="stopGame()">
+      Stop
+    </button>
+    <div id="gameButtonArea">
+      <button onclick= "guess(1)" id="button1" onmousedown="startTone(1)" onmouseup="stopTone()"></button>
+      <button onclick= "guess(2)" id="button2" onmousedown="startTone(2)" onmouseup="stopTone()"></button>
+      <button onclick= "guess(3)" id="button3" onmousedown="startTone(3)" onmouseup="stopTone()"></button>
+      <button onclick= "guess(4)" id="button4" onmousedown="startTone(4)" onmouseup="stopTone()"></button>
+      
+    </div>
+
+  </body>
+</html>
